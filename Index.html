@@ -45,7 +45,7 @@
 
     <hr>
 
-    <h1>Attributes</h1>
+
     <p><b>Attributes</b> are properties which can change an HTML elements. Attributes are written in the opening tag of any html element. The most attributes
         <i>src</i>, <i>href</i>, <i>class</i>, <id>id</id>, <i>style</i>.</p>
 
@@ -54,17 +54,41 @@
 
     <p style="color: red">This paragraph has inline CSS style which changes the font color to red.</p>
 
-    <p style=background-color: blue>This paragraph has inline CSS style which changes the background color.</p>
+    <p style="background-color: Lightgreen">This paragraph has inline CSS style which changes the background color.</p>
 
-    <p style="color lightsteelblue; background-color: slategrey">This paragraph has inline CSS style which changes font color <b>AND</b> the background color.</p>
+    <p style="color: lightsteelblue; background-color: slategrey">This paragraph has inline CSS style which changes font color <b>AND</b> the background color.</p>
 
-    <p stlye="font-family: Jokerman">This paragraph has a different font type.</p>
+    <p style="font-family: Jokerman">This paragraph has a different font type.</p>
 
     <p style="font-size: 69px">This paragraph has a larger font size.</p>
 
     <p style="background-color: #222831; color: #dddddd; font-family: 'Edwardian Script ITC'; font-size: 69px">This paragraph has all 4 inline styles.</p>
 
+    <h1 style="color: #f05454"> Images</h1>
+    <p>An <b>image element</b> is an <i>inline</i> element which inserts pictures into the document. An image element is self-closing, which means it does not have a closing tag. it has one major attribute is self-closing,
+    which mean it does not have closing tag. Ihas one major attribute, src, which is a filepath that points to the images' location. Those filepaths can either be
+    <b>absolute</b> or <b>relative</b>.</p>
 
+    <h2>Simple Image Example</h2>
+    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg">
+
+    <h2>Image Atrributes</h2>
+    <p>There are 4 attributes commonly used for images. <i>width</i> and <i>height</i> are used to resize the images. <i>alt</i> allows to use text description of images for
+    accessibility and broken images. <i>title</i> allows a hover-over text to appear.</p>
+
+    <h3>Width and Height</h3>
+    <p>The width and height cna be measured in many different ways, but the more </p>
+
+      <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" title="set width and height using pixels" width="150px" height="400px">
+
+        <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" title="Set width and height using pixel and respecting aspect ratio" width="150px">
+
+      <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" title="Set width adn height using pixel and respecting aspect ratio" width="150px" height="400px">
+
+    <h3>Alt Attribute</h3>
+    <p>EVERY picture should have the alt attribute. The alt attribute helps with screen readers for visually impaired and in the cases that the image is broken.</p>
+
+    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="" width="50%">
 
 
 </body>
