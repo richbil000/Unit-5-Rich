@@ -6,6 +6,7 @@
 </head>
 <body style="background-color: #dddddd">
     <h1 style="color: #f05454">HTML NOTES</h1>
+    <a href="cssnotes.html">CSS Notes Page</a>
     <hr>
     <h1>Headers</h1>
     <p>Headers are used to create titles and section titles. There are 6 different sizes pre-formatted for HTML.</p>
@@ -72,7 +73,7 @@
     <h2>Simple Image Example</h2>
     <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg">
 
-    <h2>Image Atrributes</h2>
+    <h2>Image Attributes</h2>
     <p>There are 4 attributes commonly used for images. <i>width</i> and <i>height</i> are used to resize the images. <i>alt</i> allows to use text description of images for
     accessibility and broken images. <i>title</i> allows a hover-over text to appear.</p>
 
@@ -88,7 +89,57 @@
     <h3>Alt Attribute</h3>
     <p>EVERY picture should have the alt attribute. The alt attribute helps with screen readers for visually impaired and in the cases that the image is broken.</p>
 
-    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="" width="50%">
+    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" alt="Amazing autumn trees" width="50%">
+    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg" title="Amazing autumn trees" width="50%">
+
+
+    <h2>Relative vs. Absolute</h2>
+    <p>An <b>absolute</b> filepath includes all the navigation to get to the server, folder and file. The example above are all absolute filepaths.
+    An absolute file path is used when the image is stored on different server or device then the HTML document.</p>
+
+    <p>A <b>relative</b> filepath only includes folder and files. the example below is a relative filepath. A relative filepath is used
+    when the images are store alongside the HTML document.</p>
+
+    <img src="nature.jpeg" width="150px" alt="river running through taiga and mountains">
+
+    <hr>
+
+    <h1 style="color: #f05454">Links</h1>
+    <p>The <b>anchor element</b> is an <i>inline element</i> and is a way to include hypertext link,
+    otherwise known as just links, in your document. An anchor is a reference point for other document or
+    files. It commonly has 3 attributed: <i>href</i>, <i>target</i> and <i>download.</i></p>
+
+    <h2>A Simple Link</h2>
+    <a href="http://ihasabucket.com/"> Link</a>
+
+
+    <p>In order for the link to work it <b>MUST</b> include the <i>href</i> attribute. This attribute is the
+    filepath, either absolute or relative, to the document, website or file you wish to link.</p>
+
+    <h2>Link Attributes</h2>
+    <p>The <i>target</i> attribute you to decide where the link opens. There are 4 options, but we
+    will only discuss two in this course. <i>_blank</i> opens the linked document</p>
+
+    <a href="http://ihasabucket.com/"> Link</a>
+
+    <p>The <i>download</i> attribute allows you to download the file or document linked and assign it a new filename. This
+    is commonly used onl with relative filepaths.</p>
+
+    <a href="nature.jpeg" download="naturepic"
+
+    <h2>A picture as Link</h2>
+    <p>since a lick has a opening AND closing tag, we can place ANY HTML ELEMENT as its content, which
+    includes pictures. We simply nest the img element inside the anchor element.</p>
+
+    <a href="http://ihasabucket.com" target="_blank">
+        <img src="nature.jpeg" width="150px" alt="river running through taiga and mountains">
+    </a>
+
+    <h2>Link to Another Page</h2>
+
+    <a href="cssnotes.html">CSS Notes Page</a>
+
+    <hr>
 
 
 </body>
